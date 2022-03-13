@@ -8,12 +8,10 @@
 
 /* Desktop - 1 */
 body {
-  background: #333;
+  background: #333 !important;
 }
 /* Rectangle 1 */
-.container {
-  padding: 1rem;
-}
+
 .m-top {
   margin-top: 2rem !important;
 }
