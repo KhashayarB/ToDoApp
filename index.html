@@ -39,7 +39,7 @@
             <button id="cTask"><span> COMPLETED </span> <i class="fas fa-tasks"></i></button>
         </div>
     </header>
-    <div class="container-fluid">
+    <div class="container-fluid px-3">
 
         <main id="rowTask">
 
@@ -55,8 +55,13 @@
                     </div>
                 </div>
                 <div class="col-8">
-                    <div class="col-12 check-task">
-                        <input type="text" placeholder="Your Task Goes Here..." required />
+                    <div class="row check-task">
+                        <div class="col-10">
+                            <input type="text" placeholder="Your Task Goes Here..." required />
+                        </div>
+                        <div class="col-2 add-task">
+                            <button id="submitTask"> Submit </button>
+                        </div>
                     </div>
                 </div>
 
