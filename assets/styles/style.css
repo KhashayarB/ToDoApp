@@ -24,6 +24,7 @@ body {
   font-weight: 900;
   font-size: 35px;
   margin-left: 0.5rem;
+  margin-bottom: 0;
   background: -webkit-linear-gradient(#0effec, #ffe500, #ff3d00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -89,17 +90,18 @@ body {
 .check-box {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4), -2px -2px 5px rgba(0, 0, 0, 0.4);
   overflow: hidden;
+  height: 100%;
   border-radius: 10px;
   background: #333;
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 100%;
 }
 .check-box form input {
   text-align: center;
-  width: 1.2rem;
-  height: 1.2rem;
-  margin-top: 2.2rem;
+  width: 2rem;
+  height: 2rem;
   accent-color: #ffe500;
 }
 .check-date input,
