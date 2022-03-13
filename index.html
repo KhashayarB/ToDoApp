@@ -16,59 +16,51 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js" defer></script>
+    <script src="assets/scripts/vendor.js" defer></script>
+    <script src="assets/scripts/app.js" defer></script>
+
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <div class="head">
-                <div class="logo">
-                    <img src="assets/styles/logo.png" alt="" />
-                    <h1>iDo it</h1>
-                </div>
-                <div class="add-task">
-                    <button> Add Task <i class="fa fa-plus"></i></button>
-                </div>
+    <header>
+        <div class="head">
+            <div class="logo">
+                <img src="assets/styles/logo.png" alt="" />
+                <h1>iDo it</h1>
             </div>
-            <div class="header-btn m-top">
-                <button><span> ALL </span> <i class="fas fa-list-ul"></i></button>
-                <button>
-                    <span> ACTIVE </span> <i class="fas fa-user-check"></i>
-                </button>
-                <button><span> COMPLETED </span> <i class="fas fa-tasks"></i></button>
+            <div class="add-task">
+                <button id="addTask"> Add Task <i class="fa fa-plus"></i></button>
             </div>
-        </header>
-        <main>
-            <div class="grid-container m-top">
-                <div class="check-box">
-                    <form><input type="checkbox" /></form>
+        </div>
+        <div class="header-btn">
+            <button id="allTask"><span> ALL </span> <i class="fas fa-list-ul"></i></button>
+            <button id="activeTask">
+                <span> ACTIVE </span> <i class="fas fa-user-check"></i>
+            </button>
+            <button id="cTask"><span> COMPLETED </span> <i class="fas fa-tasks"></i></button>
+        </div>
+    </header>
+    <div class="container-fluid">
+
+        <main id="rowTask">
+
+            <div class="row mt-4">
+                <div class="col-1">
+                    <div class="col-12 check-box">
+                        <form><input type="checkbox" /></form>
+                    </div>
                 </div>
-                <div class="check-date">
-                    <form><input type="datetime-local" required /></form>
+                <div class="col-3">
+                    <div class="col-12 check-date">
+                        <form><input type="datetime-local" required /></form>
+                    </div>
                 </div>
-                <div class="check-task">
-                    <input type="text" placeholder="Your Task Goes Here..." required />
+                <div class="col-8">
+                    <div class="col-12 check-task">
+                        <input type="text" placeholder="Your Task Goes Here..." required />
+                    </div>
                 </div>
 
-                <div class="check-box">
-                    <form><input type="checkbox" /></form>
-                </div>
-                <div class="check-date">
-                    <form><input type="datetime-local" required /></form>
-                </div>
-                <div class="check-task">
-                    <input type="text" placeholder="Your Task Goes Here..." required />
-                </div>
-
-                <div class="check-box">
-                    <form><input type="checkbox" /></form>
-                </div>
-                <div class="check-date">
-                    <form><input type="datetime-local" required /></form>
-                </div>
-                <div class="check-task">
-                    <input type="text" placeholder="Your Task Goes Here..." required />
-                </div>
             </div>
         </main>
         <footer></footer>
