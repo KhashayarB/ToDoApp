@@ -11,9 +11,9 @@ const con = mysql.createConnection({
 con.connect(function (err) {
   if (err) throw err;
   console.log("Connected!");
-  var sql = "DELETE FROM task WHERE idTask = 1";
+  var sql = "INSERT INTO task (idTask) VALUES (2)";
   con.query(sql, function (err, result) {
     if (err) throw err;
-    console.log("1 deleted");
+    console.log("2 created");
   });
 });
