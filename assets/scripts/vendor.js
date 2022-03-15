@@ -10,21 +10,26 @@ const newTask =
   '<div class="row mt-4">' +
   '<div class="col-1">' +
   '<div class="col-12 check-box">' +
-  '<form><input type="checkbox" /></form>' +
+  '<form><input type="checkbox" id="i">' +
+  '<label for="i" class="checkbox">' +
+                                '<div class="checkbox__inner">' +
+                                    '<div class="green__ball"></div>' +
+                                '</div>' +
+                            '</label></form>' +
   " </div>" +
   " </div>" +
   '<div class="col-3">' +
-  '<div class="col-12 check-date">' +
+  '<div class="col-12 check-date p-2">' +
   '<form><input type="datetime-local" required /></form>' +
   "</div>" +
   "</div>" +
   '<div class="col-8">' +
-  '<div class="row check-task">' +
+  '<div class="row check-task p-2">' +
   '<div class="col-10">' +
   '<input type="text" placeholder="Your Task Goes Here..." required />' +
   "</div>" +
   '<div class="col-2 add-task">' +
-  ' <button id="submitTask"> Submit </button>' +
+  ' <button id="submitTask"> Submit <i class="fas fa-save"></i> </button>' +
   "</div>" +
   "</div>" +
   "</div>";
