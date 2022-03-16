@@ -211,3 +211,6 @@ input[type="checkbox"]:checked + label.checkbox .checkbox__inner .green__ball {
   height: 15%;
   filter: blur(4px);
 }
+#deleteTask {
+  display: none;
+}
