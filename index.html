@@ -17,7 +17,89 @@
 
 <body>
     <div class="container">
-        <header>
+        <header><!DOCTYPE html>
+            <html lang="en">
+            
+            <head>
+                <meta charset="UTF-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>iDoiT</title>
+                <link rel="stylesheet" href="assets/styles/style.css" />
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                <link href="https://fonts.googleapis.com/css2?family=Snippet&display=swap" rel="stylesheet" />
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+                    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+                    crossorigin="anonymous" referrerpolicy="no-referrer" />
+                <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+                <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+                <script src="node_modules/@popperjs/core/dist/umd/popper.min.js" defer></script>
+                <script src="assets/scripts/vendor.js" defer></script>
+                <script src="assets/scripts/app.js" defer></script>
+            </head>
+            
+            <body>
+                <header>
+                    <div class="head">
+                        <div class="logo">
+                            <img src="assets/styles/logo.png" alt="" />
+                            <h1>iDo it</h1>
+                        </div>
+                        <div class="add-task">
+                            <button id="addTask"> Add Task <i class="fa fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="header-btn">
+                        <button id="allTask"><span> ALL </span> <i class="fas fa-list-ul"></i></button>
+                        <button id="activeTask">
+                            <span> ACTIVE </span> <i class="fas fa-user-check"></i>
+                        </button>
+                        <button id="cTask"><span> COMPLETED </span> <i class="fas fa-tasks"></i></button>
+                    </div>
+                </header>
+                <div class="container-fluid pe-4">
+            
+                    <main id="rowTask">
+            
+                        <div class="row mt-4">
+                            <div class="col-1">
+                                <div class="col-12 check-box">
+                                    <form><input type="checkbox" name="checkbox" value="false" id="checkbox">
+                                        <input type="hidden">
+                                        <label for="checkbox" class="checkbox">
+                                            <div class="checkbox__inner">
+                                                <div class="green__ball"></div>
+                                            </div>
+                                        </label>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="col-12 check-date p-2">
+                                    <form><input type="datetime-local" /></form>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="row check-task p-2">
+                                    <div class="col-10">
+                                        <input type="text" placeholder="Your Task Goes Here..." />
+                                    </div>
+                                    <div class="col-2 d-flex justify-content-end add-task">
+                                        <button id="submitTask"> Submit <i class="fas fa-save"></i>
+                                        </button>
+                                        <button id="deleteTask"> Delete <i class="fas fa-trash"></i> </button>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </main>
+                    <footer></footer>
+                </div>
+            </body>
+            
+            </html>
             <div class="head">
                 <h1>i DO it</h1>
             </div>
