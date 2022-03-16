@@ -21,6 +21,6 @@ submitTask.addEventListener("click", () => {
 });
 
 addTask.addEventListener("click", () => {
-  task.insertAdjacentHTML("afterbegin", renderNewTask());
-  renderNewTask(task);
+  task.insertAdjacentHTML("afterbegin", newTask);
+  // renderNewTask(task);
 });
