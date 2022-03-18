@@ -106,7 +106,9 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.check-date {
+  height: 100%;
+}
 .check-date input,
 .check-task input {
   width: 100%;
@@ -210,4 +212,7 @@ input[type="checkbox"]:checked + label.checkbox .checkbox__inner .green__ball {
   width: 35%;
   height: 15%;
   filter: blur(4px);
+}
+#deleteTask {
+  display: none;
 }

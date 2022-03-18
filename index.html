@@ -18,6 +18,8 @@
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js" defer></script>
     <script src="assets/scripts/vendor.js" defer></script>
     <script src="assets/scripts/app.js" defer></script>
+    <script src="node_modules/moment/min/moment.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 
 <body>
@@ -44,11 +46,12 @@
         <main id="rowTask">
 
             <div class="row mt-4">
-                <div class="col-1">
+                <div class="col-md-1">
                     <div class="col-12 check-box">
-                        <form><input type="checkbox" id="i">
-	
-                            <label for="i" class="checkbox">
+                        <form>
+                            <input type="hidden" value="id">
+                            <input type="checkbox" name="checkbox" id="checkbox" value="false">
+                            <label for="checkbox" class="checkbox">
                                 <div class="checkbox__inner">
                                     <div class="green__ball"></div>
                                 </div>
@@ -56,18 +59,19 @@
                             </form>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3">
                     <div class="col-12 check-date p-2">
                         <form><input type="datetime-local" required /></form>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8">
                     <div class="row check-task p-2">
                         <div class="col-10">
-                            <input type="text" placeholder="Your Task Goes Here..." required />
+                            <input type="text" placeholder="Your Task Goes Here..."/>
                         </div>
                         <div class="col-2 d-flex justify-content-end add-task">
                             <button id="submitTask"> Submit <i class="fas fa-save"></i> </button>
+                            <button id="deleteTask"> Delete <i class="fas fa-trash"></i> </button>
                         </div>
                     </div>
                 </div>
