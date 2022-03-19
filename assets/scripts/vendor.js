@@ -44,7 +44,9 @@ const newTask =
   "</div>" +
   "</div>";
 
-const renderNewTask = (id, checkBox, dateTime, desc) => {
+const renderNewTask = () => {
+  const newTaskElement = document.createElement("li");
+  newTaskElement.className = "task-element";
   task.innerHTML = `
   <div class="row mt-4">
                 <div class="col-1">
@@ -62,6 +64,7 @@ const renderNewTask = (id, checkBox, dateTime, desc) => {
                 </div>
                 <div class="col-3">
                     <div class="col-12 check-date p-2">
+                    <form><input type="datetime-local" value="${dateTime}"/></form>
                     </div>
                 </div>
                 <div class="col-8">
@@ -78,6 +81,8 @@ const renderNewTask = (id, checkBox, dateTime, desc) => {
                 </div>
 
             </div>`;
+  const newList = document.getElementById("task-list");
+  newList.append(newTaskElement);
 };
 
 // function toggleCheckBox() {
